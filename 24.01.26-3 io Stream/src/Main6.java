@@ -16,25 +16,23 @@ public class Main6 {
 		}
 		return set;
 	}
-//
-	
-	
+
 	public static void main(String[] args) {
 		Main6 m = new Main6();
 		Set<Integer> set = m.randomSet();
-		
+
 		PrintWriter pw = null;
 		try {
 			pw = new PrintWriter(new File("d:\\mydata\\lottonum.txt"));
-		
-			for(Integer i :set) {
+
+			for (Integer i : set) {
 				pw.println(i);
 			}
 			pw.flush();
 		} catch (FileNotFoundException e) {
 			e.printStackTrace();
-		}finally {
-			if(pw != null) {
+		} finally {
+			if (pw != null) {
 				pw.close();
 			}
 		}
