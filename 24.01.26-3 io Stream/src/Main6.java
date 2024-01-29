@@ -16,7 +16,9 @@ public class Main6 {
 		}
 		return set;
 	}
-
+//
+	
+	
 	public static void main(String[] args) {
 		Main6 m = new Main6();
 		Set<Integer> set = m.randomSet();
